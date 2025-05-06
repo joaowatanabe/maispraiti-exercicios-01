@@ -14,7 +14,14 @@ const ehPar = (numInteiro) => {
 let numero;
 
 while (true) {
-  const entrada = prompt("Digite um número inteiero: ");
+  const entrada = prompt(
+    'Digite um número inteiero (ou digite "sair" para encerrar): '
+  );
+  if (entrada.toLowerCase() === "sair") {
+    console.log("Programa encerrado.");
+    break;
+  }
+
   numero = parseInt(entrada, 10);
 
   if (!isNaN(numero)) {
