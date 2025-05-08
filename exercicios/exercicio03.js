@@ -22,6 +22,6 @@ while (true) {
     break;
   }
 
-  const nota = parseInt(entrada, 10);
+  const nota = parseFloat(entrada);
   console.log(notas(nota));
 }
